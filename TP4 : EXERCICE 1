@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Exercice 1</title>
+</head>
+<body>
+
+<h2>Calculatrice simple</h2>
+
+<button onclick="calculer()">Lancer</button>
+
+<script>
+function calculer() {
+    let a = Number(prompt("Entrer nombre 1"));
+    let b = Number(prompt("Entrer nombre 2"));
+
+    console.log("Somme:", a + b);
+    console.log("Différence:", a - b);
+    console.log("Produit:", a * b);
+
+    if (b == 0) {
+        console.log("Quotient: Impossible (division par zéro)");
+    } else {
+        console.log("Quotient:", a / b);
+    }
+}
+</script>
+
+</body>
+</html>
